@@ -16,20 +16,18 @@
 
 //CODE HERE
 
-class me {
-  constructor(firstName,state, age, greeter){
-    this.firstName= firstName;
-    this.state = state;
-    this.age =age;
+const me = { 
+  firstName: "Carlos ",
+  state: "California",
+  age: 29, 
+  greeter: function(){ 
+    return `Hello! My name is ${this.firstName} and I live in ${this.state}`
   }
-  greeting(){
-    console.log(`My name is ${this.firstName} and I live in ${this.state}`);
+};
 
-  }
-}
-let Carlos = new me("Carlos", "Utah", 19);
+console.log(me.greeter())
 
-Carlos.greeting()
+
 
 
 
@@ -58,31 +56,19 @@ Carlos.greeting()
 */
 
 //CODE HERE
-let year = 2020
-class carFactory {
-  constructor(make, model, year, isNew) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
-    this.isNew = true
-    if (this.make > 2018) {
-      console.log("this car is new");
-    } else {
-      console.log("this car is old");
-      
-    }
+const carFactory = (make,model, year) => { 
+  let car = { 
+    make: make,
+    model: model,
+    year: year
   }
+  if(car.year > 2018){
+    car.isNew = true 
+  } else{ 
+    car["isNew"] = false
+
   }
+  return car;
+};
+console.log(carFactory("toyota", "camry", 2020))
 
-
-  
-// class carFactory { 
-// //   constructor(make, model, year, isNew){
-// //     this.make = make;
-// //     this.model = model;
-// //     this.year = year
-// //   }
-// // } 
-// // isNew(){ 
-
-// // }
