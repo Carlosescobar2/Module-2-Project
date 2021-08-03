@@ -2,17 +2,18 @@
 /* Create a copy of the faveColors array called 'colorCopy' using the slice method. */
 
 const faveColors = ['red', 'green', 'black']
-faveColors.push("orange")
-//CODE HERE
-var someColors = faveColors.slice(0, 4)
-console.log(someColors)
+
+const colorCopy = faveColors.slice()
+
+console.log(colorCopy)
 
 //////////////////PROBLEM 2////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
 //CODE HERE
-// code completed in number 1
 
+colorCopy.push("purple")
+console.log(colorCopy)
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -22,16 +23,9 @@ console.log(someColors)
 
 const numbers = [1, 2, 3, 4, 5]
 
-//CODE HERE
+const middleNums = numbers.slice(1,4); 
+console.log(middleNums)
 
-let middleNums = (numbers)
-if(numbers[0,1,2]){
-  console.log("2,3,4")
-}
-// let middleNums = (numbers)
-// console.log(middleNums[1])
-// console.log(middleNums[2])
-// console.log(middleNums[3])
 
 
 
