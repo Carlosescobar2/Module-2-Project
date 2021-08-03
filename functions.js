@@ -6,14 +6,11 @@
 */
 
 //CODE HERE
-let num1 = 5
-let num2 = 4
-let sum = ( num1 + num2) 
+function sum(num1,num2) { 
+  return num1 + num2 
+} 
 
-if( num1 + num2){ 
-  console.log("num1 + num2 ")
-}
-console.log(sum)
+console.log(sum(4,5))
 
 
 //////////////////PROBLEM 2////////////////////
@@ -25,15 +22,14 @@ console.log(sum)
 */
 
 //CODE HERE
-let number= 10
-let greaterThanFive = (number)
-if(number > 5){
-  greaterThanFive = "true"
-} else{
-  greaterThanFive="false"
-}
 
-console.log(greaterThanFive)
+const greaterThanFive = function(number) { 
+  if(number > 5){ 
+    return true
+  }
+  return false 
+}; 
+console.log(greaterThanFive(4))
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -45,15 +41,15 @@ console.log(greaterThanFive)
 
 //CODE HERE
 
-let word= `zebra`
-function findZWords(word){ 
-  if(word = "z"){
-    console.log(`${word} starts with z`)
-  } else{ 
-    console.log(`${word} does not start with z`)
+const findzWords = (word) => { 
+  if(word.toLowerCase() .startsWith("z")) { 
+    return "the name begins with z";
+  } else  { 
+    return "the name does not begin with z"
   }
 }
-findZWords()
+console.log(findzWords("carlos"))
+
 
 //////////////////PROBLEM 4////////////////////
 /*
